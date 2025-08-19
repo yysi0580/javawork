@@ -53,8 +53,9 @@ public class T01_calender_get {
 		
 		int ampm = today.get(Calendar.AM_PM);
 		System.out.println(ampm);// 0이면 오전(AM), 1이면 오후(PM)
+	
 		System.out.printf("시간 : %s %d시",ampm == 0?"AM":"PM", time + 1);
-
+		System.out.printf("시간 : %s %d시",today.get(Calendar.AM_PM) == 0?"AM":"PM", today.get(Calendar.HOUR) + 1);//사실 한줄로 가능하다
 
 	}
 
